@@ -15,5 +15,5 @@ Washington-2016-Summary.csv
 Washington-CapitalBikeshare-2016.csv
 
 ### Credits
-None
+Thanks Udacity for providing a path for my continuing education!
 
