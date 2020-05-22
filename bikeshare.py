@@ -42,10 +42,10 @@ data_files = ['./data/NYC-CitiBike-2016.csv',
               './data/Washington-CapitalBikeshare-2016.csv',]
 
 # print the first trip from each file, store in dictionary
-example_trips = {}
+ex_trips = {}
 for data_file in data_files:
     city, first_trip = print_first_point(data_file)
-    example_trips[city] = first_trip
+    ex_trips[city] = first_trip
 
 
 
@@ -84,7 +84,7 @@ tests = {'NYC': 13.9833,
          'Washington': 7.1231}
 
 for city in tests:
-    assert abs(duration_in_mins(example_trips[city], city) - tests[city]) < .001
+    assert abs(duration_in_mins(ex_trips[city], city) - tests[city]) < .001
 
 
 
@@ -127,7 +127,7 @@ tests = {'NYC': (1, 0, 'Friday'),
          'Washington': (3, 22, 'Thursday')}
 
 for city in tests:
-    assert time_of_trip(example_trips[city], city) == tests[city]
+    assert time_of_trip(ex_trips[city], city) == tests[city]
 
 
 
@@ -163,7 +163,7 @@ tests = {'NYC': 'Customer',
          'Washington': 'Subscriber'}
 
 for city in tests:
-    assert type_of_user(example_trips[city], city) == tests[city]
+    assert type_of_user(ex_trips[city], city) == tests[city]
 
 
 
