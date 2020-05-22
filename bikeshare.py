@@ -175,8 +175,6 @@ def condense_data(in_file, out_file, city):
     This function takes full data from the specified input file
     and writes the condensed data to a specified output file. The city
     argument determines how the input file will be parsed.
-    
-    HINT: See the cell below to see how the arguments are structured!
     """
     
     with open(out_file, 'w') as f_out, open(in_file, 'r') as f_in:
@@ -226,12 +224,6 @@ def condense_data(in_file, out_file, city):
                     
                 #w.writerow(new_point.keys())
                 w.writerow(new_point.values())
-
-                
-            #with open(out_file) as f:
-            #    reader = csv.reader(f)
-            #    for row in reader:
-            #        print(row)
 
 
 
@@ -286,7 +278,6 @@ def number_of_trips(filename):
         
         # return tallies as a tuple
         return(n_subscribers, n_customers, n_total, prop_sub, prop_cust, avg_sub_time, avg_cust_time)
-
 
 
 
@@ -370,7 +361,6 @@ print('Chicago:', number_of_trips(data_file)[5:7])
 
 data_file = './data/NYC-2016-Summary.csv'
 print('NYC:', number_of_trips(data_file)[5:7])
-
 
 
 
