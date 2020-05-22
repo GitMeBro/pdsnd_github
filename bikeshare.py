@@ -119,6 +119,7 @@ def time_of_trip(datum, city):
     return (month, hour, day_of_week)
 
 
+
 # Some tests to check that your code works. There should be no output if all of
 # the assertions pass. The `example_trips` dictionary was obtained from when
 # you printed the first trip from each of the original data files.
@@ -153,6 +154,7 @@ def type_of_user(datum, city):
         user_type = datum['usertype']
 
     return user_type
+
 
 
 # Some tests to check that your code works. There should be no output if all of
@@ -353,9 +355,7 @@ print('NYC:', trip_duration(data_file))
 
 
 
-## Use this and additional cells to answer Question 4c. If you have    ##
-## not done so yet, consider revising some of your previous code to    ##
-## make use of functions for reusability.                              ##
+## Use this and additional cells to answer Question 4c.                ##
 ##                                                                     ##
 ## TIP: For the Bay Area example data, you should find the average     ##
 ## Subscriber trip duration to be 9.5 minutes and the average Customer ##
