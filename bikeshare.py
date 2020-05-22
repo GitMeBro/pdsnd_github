@@ -42,10 +42,10 @@ data_files = ['./data/NYC-CitiBike-2016.csv',
               './data/Washington-CapitalBikeshare-2016.csv',]
 
 # print the first trip from each file, store in dictionary
-example_trips = {}
+ex_trips = {}
 for data_file in data_files:
     city, first_trip = print_first_point(data_file)
-    example_trips[city] = first_trip
+    ex_trips[city] = first_trip
 
 
 
@@ -84,7 +84,7 @@ tests = {'NYC': 13.9833,
          'Washington': 7.1231}
 
 for city in tests:
-    assert abs(duration_in_mins(example_trips[city], city) - tests[city]) < .001
+    assert abs(duration_in_mins(ex_trips[city], city) - tests[city]) < .001
 
 
 
@@ -128,7 +128,7 @@ tests = {'NYC': (1, 0, 'Friday'),
          'Washington': (3, 22, 'Thursday')}
 
 for city in tests:
-    assert time_of_trip(example_trips[city], city) == tests[city]
+    assert time_of_trip(ex_trips[city], city) == tests[city]
 
 
 
@@ -165,7 +165,7 @@ tests = {'NYC': 'Customer',
          'Washington': 'Subscriber'}
 
 for city in tests:
-    assert type_of_user(example_trips[city], city) == tests[city]
+    assert type_of_user(ex_trips[city], city) == tests[city]
 
 
 
@@ -285,13 +285,16 @@ def number_of_trips(filename):
 ## the function on the cleaned data files you created from Question 3.      ##
 
 data_file = './data/Washington-2016-Summary.csv'
-print('Washington:', number_of_trips(data_file))
+#print('Washington:', number_of_trips(data_file))
+print('Washington, {}').format(number_of_trips(data_file))
 
 data_file = './data/Chicago-2016-Summary.csv'
-print('Chicago:', number_of_trips(data_file))
+#print('Chicago:', number_of_trips(data_file))
+print('Chicago, {}').format(number_of_trips(data_file))
 
 data_file = './data/NYC-2016-Summary.csv'
-print('NYC:', number_of_trips(data_file))
+#print('NYC:', number_of_trips(data_file))
+print('NYC, {}').format(number_of_trips(data_file))
 
 #data_file = './examples/BayArea-Y3-Summary.csv'
 #print('BayArea:', number_of_trips(data_file))
