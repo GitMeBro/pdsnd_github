@@ -1,5 +1,4 @@
 ### Date created
-Include the date you created this project and README file.
 5/22/2020
 ### Project Title
 Bikeshare Analysis
