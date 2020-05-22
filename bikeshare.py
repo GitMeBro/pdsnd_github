@@ -292,13 +292,16 @@ def number_of_trips(filename):
 ## the function on the cleaned data files you created from Question 3.      ##
 
 data_file = './data/Washington-2016-Summary.csv'
-print('Washington:', number_of_trips(data_file))
+#print('Washington:', number_of_trips(data_file))
+print('Washington, {}').format(number_of_trips(data_file))
 
 data_file = './data/Chicago-2016-Summary.csv'
-print('Chicago:', number_of_trips(data_file))
+#print('Chicago:', number_of_trips(data_file))
+print('Chicago, {}').format(number_of_trips(data_file))
 
 data_file = './data/NYC-2016-Summary.csv'
-print('NYC:', number_of_trips(data_file))
+#print('NYC:', number_of_trips(data_file))
+print('NYC, {}').format(number_of_trips(data_file))
 
 #data_file = './examples/BayArea-Y3-Summary.csv'
 #print('BayArea:', number_of_trips(data_file))
